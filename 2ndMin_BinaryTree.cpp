@@ -47,9 +47,9 @@ public:
         helper(root, root->val, min);
         return min;  
     }
-    void helper(TreeNode *root,int value,int &min){
-        if(root->val!=value && (root->val < min || min == -1))
-            min=root->val;
+    void helper(TreeNode *root, int value, int &min){
+        if(root->val != value && (root->val < min || min == -1))
+            min = root->val;
         if(root->left)
             helper(root->left, value, min);
         if(root->right)
